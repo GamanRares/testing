@@ -259,7 +259,7 @@
                     </div>
                     <div id="descriptionCollapsible" class="row collapse multi-collapse show mb-0 pb-0">
                         <div class="col mb-0 pb-0">
-                            <pre style="font-family: 'Helvetica Neue', sans-serif; font-size: 1em; line-height: 1.2; font-weight: 400;" th:utext="${#strings.replace(#strings.escapeXml(issueDTO.getDescription()),'&#10;','&lt;br&gt;')}">
+                            <pre style="font-family: 'Helvetica Neue', sans-serif; font-size: 1em; line-height: 1.2; font-weight: 400; white-space: pre-wrap;" th:utext="${#strings.replace(#strings.escapeXml(issueDTO.getDescription()),'&#10;','&lt;br&gt;')}">
                                 Description
                             </pre>
                         </div>
